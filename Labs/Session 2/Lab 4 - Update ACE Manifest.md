@@ -4,7 +4,7 @@ In this exercise you will modify the ACE Manifest. You will be continue to use t
 ## Task 1 - Update the ACE Name 
 1. Review the ACE project files in the Files tab in VSCode
         
-![ACE Files](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/solution-files.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE Files](../../Assets/solution-files.png)
 
 2. Open the manifest file. This should be called `HelloCafeteriaAdaptiveCardExtension.manifest.json` and should look like the example below:
 
@@ -46,7 +46,7 @@ In this exercise you will modify the ACE Manifest. You will be continue to use t
 
 4. Check that the manifest change has updated the ACE - Go back to your workbench and reload. Your ACE should look as follows
 
-![ACE Rename](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/manifest-rename.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE Rename](../../Assets/manifest-rename.png)
 
 
 > **Note**
@@ -65,7 +65,7 @@ In this exercise you will modify the ACE Manifest. You will be continue to use t
 
 2. Check that the manifest change has updated the ACE - Go back to your workbench and reload. This should have updated the icon seen when adding the ACE
 
-![ACE Icon Add](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/manifest-icon1new.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE Icon Add](../../Assets/manifest-icon1new.png)
 
 > **Note**
 >
@@ -91,7 +91,7 @@ You may want the default size of this card to be Large. This can be achieved by 
 
 3. Check that the manifest change has updated the ACE - Go back to the workbench and reload. This should have updated the card defult size seen when adding the ACE.
 
-![ACE Property Change](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/manifest-propertiesnew.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE Property Change](../../Assets/manifest-propertiesnew.png)
 
 > **Note**
 >

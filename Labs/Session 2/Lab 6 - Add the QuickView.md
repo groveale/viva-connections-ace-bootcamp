@@ -5,7 +5,7 @@ This Lab will also assume you have the knowledge gained from the previous labs. 
 
 ## Task 1 - Add the Cafeteria Adaptive Card (QuickView)
 
-This Adaptive Card was built in Session 2 of the Bootcamp. The .json file for the card can be found [here](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/QuickViewTemplate.json)
+This Adaptive Card was built in Session 2 of the Bootcamp. The .json file for the card can be found [here](../../Assets/QuickViewTemplate.json)
 
 1. Open existing QuickViewTemplate.json file that was added during the scaffolding of the project.
 
@@ -15,7 +15,7 @@ This Adaptive Card was built in Session 2 of the Bootcamp. The .json file for th
 
 3. Save your changes and check your workbench. Your QuickView should look like the following:
 
-![New QuickView .json](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/CafeteriaQuickViewNew.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![New QuickView .json](../../Assets/CafeteriaQuickViewNew.png)
 
 ## Task 2 - Add the backing data
 
@@ -80,7 +80,7 @@ public get data(): IQuickViewData {
 import * as strings from 'HelloCafeteriaAdaptiveCardExtensionStrings';
 ```
 
-![QuickView with data](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/CafeteriaQuickViewDataNew.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![QuickView with data](../../Assets/CafeteriaQuickViewDataNew.png)
 
 > **Important**
 >
@@ -110,7 +110,7 @@ public get cardButtons(): [ICardButton] | [ICardButton, ICardButton] | undefined
 
 3. Save you changes and check your workbench. Your ACE should look as follows:
 
-![CardView with menu button](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/CafeteriaQuickCompleteNew.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![CardView with menu button](../../Assets/CafeteriaQuickCompleteNew.png)
 
 > **Remeber**
 >

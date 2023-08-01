@@ -44,7 +44,7 @@ public get data(): IPrimaryTextCardParameters {
 
 5. Save you changes and check your workbench. Your CardView should look like the below (you may need to update the title)
 
-![ACE CardView BaseType Change](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/ChangeCardView.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE CardView BaseType Change](../../Assets/ChangeCardView.png)
 
 Your CardView.ts should look at follows
 
@@ -123,7 +123,7 @@ public get onCardSelection(): IQuickViewCardAction | IExternalLinkCardAction | u
 ```
 3. Save you changes and check your workbench. Your CardView should look like the below. Check that the QuickView is launched when clicking on the cardview.
 
-![ACE CardView Updated](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/UpdateCArdViewNew.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE CardView Updated](../../Assets/UpdateCArdViewNew.png)
 
 > **Remember**
 >

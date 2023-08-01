@@ -33,16 +33,16 @@ In this exercise you will test that all the tools are installed and that they ar
 
 5. Click the « + » button to add a WebPart
 
-![Add an ACE to workbench](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/Add%20ACE%20to%20workbench.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Add an ACE to workbench](../../Assets/Add%20ACE%20to%20workbench.png)
 
 6. Select **AceBootcamp** card under **Local** group and it should look something like this:
 
-![ACE on the workbench](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/ACE%20Bootcamp%20Card%20on%20dashboard.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE on the workbench](../../Assets/ACE%20Bootcamp%20Card%20on%20dashboard.png)
 
 7. Click on **Preview** button in the top right corner.
 8. Click on the **Quick view** button on the ACE Card to open the quick view
 
-![Quick view](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/QuickView.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Quick view](../../Assets/QuickView.png)
 
 ## Common issues and resolutions
 | Issue | Resolution | 
