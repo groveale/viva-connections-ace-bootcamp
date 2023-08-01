@@ -1,0 +1,70 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "Container",
+            "backgroundImage": {
+                "url": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/cafe.jpg"
+            },
+            "minHeight": "200px",
+            "items": [
+                {
+                    "type": "Container",
+                    "style": "emphasis",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "The Bootcamp",
+                            "wrap": true,
+                            "size": "Large"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "OPEN",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "$data": "${menus}",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "70px",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "${imageUrl}",
+                            "width": "70px",
+                            "height": "70px"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${title}",
+                            "wrap": true,
+                            "weight": "Bolder",
+                            "size": "Medium"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${description}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

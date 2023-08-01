@@ -1,0 +1,51 @@
+{
+"type": "AdaptiveCard",
+"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+"version": "1.3",
+"body": [
+{
+ "type": "TextBlock",
+ "text": "Security Alert!",
+ "wrap": true,
+ "size": "ExtraLarge",
+ "color": "Attention"
+},
+ {
+ "type": "TextBlock",
+ "text": "There will be increased bag checks today.",
+ "wrap": true
+ },
+ {
+ "type": "ActionSet",
+ "actions": [
+ {
+ "type": "Action.ShowCard",
+ "title": "View Alert",
+ "card": {
+ "type": "AdaptiveCard",
+ "body": [
+ {
+ "type": "TextBlock",
+ "size": "Large",
+ "weight": "Bolder",
+ "text": "Increased bag checks"
+ },
+ {
+ "type": "TextBlock",
+ "text": "There will be increased bag checks in the office today. Please expect days upon arrival, we thank you for your patience.",
+"wrap": true
+ }
+ ],
+ "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+"version": "1.3"
+}
+ },
+ {
+ "type": "Action.OpenUrl",
+ "title": "View Security Policy",
+"url": "https://www.microsoft.com"
+ }
+ ]
+ }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+"type": "AdaptiveCard",
+"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+"version": "1.3",
+"body": [
+{
+"type": "TextBlock",
+"text": "Hello World!",
+"wrap": true,
+"size": "ExtraLarge"
+},
+ {
+ "type": "TextBlock",
+ "text": "This is a simple adaptive card with two text blocks.",
+ "wrap": true
+ }
+ ]
+}

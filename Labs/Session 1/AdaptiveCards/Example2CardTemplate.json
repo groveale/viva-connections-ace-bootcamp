@@ -1,0 +1,34 @@
+{
+"type": "AdaptiveCard",
+"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+"version": "1.3",
+"body": [
+ {
+ "type": "TextBlock",
+ "text": "Security Alert!",
+ "wrap": true,
+ "size": "ExtraLarge",
+ "color": "Attention"
+ },
+ {
+ "type": "TextBlock",
+ "text": "There will be increased bag checks today.",
+ "wrap": true
+},
+ {
+ "type": "ActionSet",
+ "actions": [
+ {
+ "type": "Action.OpenUrl",
+ "title": "View Alert",
+ "url": "https://contoso.sharepoint.com/SitePages/Alert.aspx"
+ },
+ {
+"type": "Action.OpenUrl",
+ "title": "View Security Policy",
+ "url": "https://contoso.sharepoint.com/SitePages/SecurityPolicy.aspx"
+ }
+]
+ }
+ ]
+}

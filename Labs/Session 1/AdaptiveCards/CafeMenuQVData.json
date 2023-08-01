@@ -1,0 +1,25 @@
+{
+  "menus": [
+    {
+        "day" : "Today",
+        "title" : "Korean Cuisine",
+        "description" : "Description for the koren cuisine",
+        "imageUrl" : "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/korean.jpg"
+    },
+    {
+        "day" : "Tomorrow",
+        "title" : "Italian Cuisine",
+        "description" : "Description for the peruvian cuisine",
+        "imageUrl" : "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/pizza.jpg"
+    },
+    {
+        "day" : "Wednesday",
+        "title" : "American Cuisine",
+        "description" : "Description for the american cuisine",
+        "imageUrl" : "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/burgers.jpg"
+    }
+  ],
+  "restaurant_name": "The Bootcamp",
+  "restaurant_state": "OPEN",
+  "time_to_close": "1 hour"
+}
