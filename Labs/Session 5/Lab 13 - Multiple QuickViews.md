@@ -8,7 +8,7 @@ In the last exercise we made some changes to our ACE to support a new data model
 
 1. Add a new file in the `quickView` folder called `DetailedView.ts`
 
-![DetailedView.ts](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/DetailedView.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![DetailedView.ts](../../Assets/DetailedView.png)
 
 2. Add the following typescript to the new file. We are defining an interface with a menu property of type `ICaferteriaMenu`. If you remember, this object will contains the meals for a particular menu. Our first quickview displays the menus, the second will now show the details of that menu.
 
@@ -88,27 +88,27 @@ import { DetailedView } from './quickView/DetailedView';
 
 7. Finally save everything and check your workbench. Nothing should have changed as we still have not added the Adaptive Card template.
 
-![Still no detailed view](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/WithoutDetailedView.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Still no detailed view](../../Assets/WithoutDetailedView.png)
 
 ## Task 2 - Add the adaptive card
 
-In an earlier lab you covered how to build adaptive cards. Feel free to build your own detailed view using the knowledge and skills gained in this lab. Or you download and use one that we have created [here](./Complete/src/adaptiveCardExtensions/cafeteriaMenu/quickView/template/DetailedViewTemplate.json)
+In an earlier lab you covered how to build adaptive cards. Feel free to build your own detailed view using the knowledge and skills gained in this lab. Or you download and use one that we have created [here](../Session6/Starter/src/adaptiveCardExtensions/cafeteriaMenu/quickView/template/DetailedViewTemplate.json)
 
 1. Create a new file called `DetailedViewTemplate.json` in the `template` folder
 
-![DetailedViewTemplate.json](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/DetailedViewTemplate.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![DetailedViewTemplate.json](../../Assets/DetailedViewTemplate.png)
 
 2. Add the json for your adaptive card to this file. 
 
 3. Save everything and check your workbench. Nothing should have changed as we still have not added the code to open this new adaptive card
 
-![Still no detailed view](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/WithoutDetailedView.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Still no detailed view](../../Assets/WithoutDetailedView.png)
 
 ## Task 3 - Update the QuickView to handle onClick events
 
 We need to add some additional declaration in our `QuickViewTemplate.json`. The below adds an `Execute` action to the menu item once expanded.
 
-1. Either add the below into your existing `QuickViewTemplate.json` or take a copy of it from [here](./Complete/src/adaptiveCardExtensions/cafeteriaMenu/quickView/template/QuickViewTemplate.json)
+1. Either add the below into your existing `QuickViewTemplate.json` or take a copy of it from [here](../Session6/Starter/src/adaptiveCardExtensions/cafeteriaMenu/quickView/template/QuickViewTemplate.json)
 
 ```json
 {
@@ -152,4 +152,4 @@ import { DETAILED_VIEW_REGISTRY_ID, ICafeteriaMenuAdaptiveCardExtensionProps, IC
 
 4. Save everything and check your workbench. You should now have a detailed menu view!
 
-![Detailed Menu View](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/DetailedMenuView.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Detailed Menu View](../../Assets/DetailedMenuView.png)

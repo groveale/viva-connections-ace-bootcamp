@@ -17,7 +17,7 @@ It is a way to separate the data-related code from other components of the ACE, 
 
 This should look like the following:
 
-![Models Folder](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/ModelFolder.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Models Folder](../../Assets/ModelFolder.png)
 
 3. In this new file we need to move the `ICafeteriaMenuItem` interface from the `CafeteriaMenuAdaptiveCardExtension.ts` file to this new file. The `ICafeteriaMenuItem.ts` file should look like the below:
 
@@ -38,7 +38,7 @@ import { ICafeteriaMenuItem } from './models/ICafeteriaMenuItem';
 
 5. Save your changes and check your workbench. We should now see the ACE and the QuickView should be populated with data. No change to before but the model is simply being used from a different file.
 
-![No Change](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/SPOCanteen.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![No Change](../../Assets/SPOCanteen.png)
 
 ## Task 2 - Create a dedicated Services folder
 
@@ -52,7 +52,7 @@ Having a "services" folder can help improve the organisation of your codebase, a
 
 This should look like the following:
 
-![Services Folder](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/ServicesFolder.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Services Folder](../../Assets/ServicesFolder.png)
 
 3. Let's first focus on the `ICafeteriaMenuService.ts` interface. An interface is like a blueprint or a template that specifies what methods a class must have, but it does not dictate how those methods should be implemented. It only defines the method signatures, return types, and input parameters.
 
@@ -173,4 +173,4 @@ A much cleaner method, without any SharePoint specific code. This data could now
 
 4. Save all your changes and check your workbench. We should now see the ACE, it should look no different to before but the `SPO` list data is now being obtained and processed from the service.
 
-![No Change Again](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/SPOCanteen.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![No Change Again](../../Assets/SPOCanteen.png)

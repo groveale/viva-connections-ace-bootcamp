@@ -46,7 +46,7 @@ export interface ICafeteriaMenuItem {
 
 We need to update (or create) a list that will work with the updated interface. To do this, we have prepared a `PowerShell` script that uses `PnP.PowerShell` to streamline the process.
 
-1. Download the script from [here](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Labs/Session%206/CreateListv2.ps1). You will also need to download a copy of [`meals.json`](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Labs/Session%206/session6Meals.json)
+1. Download the script from [here](./CreateListv2.ps1). You will also need to download a copy of [`meals.json`](./session6Meals.json)
 
 2. Open the downloaded script and update the following variables in the script to reflect your environment. 
 Make sure the `siteUrl` is your SPO home site or root site (`https://<yourtenant>.sharepoint.com` **or** `https://<yourtenant>.sharepoint.com/sites/home`).
@@ -63,11 +63,11 @@ $mealsJsonPath = ".\meals.json"
 
 You may see the following if you are using the same name as an existing list (created int he previous lab).
 
-![Confirm List Deletion](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/DeleteList.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Confirm List Deletion](../../Assets/DeleteList.png)
 
 4. Check your SPO Site, you should see a list similar to the below:
 
-![Updated SPO List](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/UpdatedSPOList.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Updated SPO List](../../Assets/UpdatedSPOList.png)
 
 5. Be sure to update the default `listTitle` in the ACE manifest
 
@@ -89,11 +89,11 @@ Before we attempt to use the data in a new QuickView let's confirm we have the e
 
 2. Add a break point on where we want to inspect the code. In vscode this is achieved by clicking to the left of the line that you want to toggle the breakpoint on. Add it to the `setState()` part of the `_fetchData()` function.
 
-![BreakPoint](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/BreakPoint.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![BreakPoint](../../Assets/BreakPoint.png)
 
 3. Open up the debug menu from the left rail. Confirm that you have a debug configuration called `Hosted workbench`. Clicking ont he cog will open up this config, confirm that the `url` and `type` values are correct. The default configuration is to launch edge. This may need to be changed to chrome if you don't use edge.
 
-![Debug Menu and Configuration](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/DebugMenu.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Debug Menu and Configuration](../../Assets/DebugMenu.png)
 
 4. Click the Play button. This should launch a new browser session at the Url specified in the debug configuration. You may be prompted to authenticate. 
 You may see many errors pop up in your debug console in vscode, but you can ignore them. Go ahead and try to add the cafeteria ACE to the workbench.
@@ -102,13 +102,13 @@ If you see an error (the irony of an error when trying to debug). This due to in
 
 5. If all has gone to plan vscode should stop at the breakpoint you added you should be able to inspect the property values. You can see in the image below that we are not receiving the items with the updated data.
 
-![Debug Values](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/DebugValues.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Debug Values](../../Assets/DebugValues.png)
 
 ## Task 4 - Update the ACE to support the new data.
 
 If you open up the QuickView you will see nothing. The QuickView will open but it will be empty like below:
 
-![Quick View Empty](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/QuickViewEmpty.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Quick View Empty](../../Assets/QuickViewEmpty.png)
 
 This is because our QuickView has an error. SPFx still compiles as the error is in the AdaptiveCard layer of the stack. This error is due to having multiple ids of the same value. Almost all AdaptiveCard are down to Ids...
 
@@ -208,4 +208,4 @@ export interface ICafeteriaMenuAdaptiveCardExtensionState {
 
 2. Save everything a check your workbench. Should be the same as always. But know that in the background alot has changed. Crucially our menuitems now contain meals.
 
-![ACE With new Data](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/ACEWithNewData.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE With new Data](../../Assets/ACEWithNewData.png)

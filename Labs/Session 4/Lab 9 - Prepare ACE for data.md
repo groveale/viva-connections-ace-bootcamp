@@ -72,7 +72,7 @@ return {
 
 3. Save you changes and check your workbench. We should now see the ACE but the QuickView should be empty. As below:
 
-![Empty Canteen](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/EmptyCanteen.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Empty Canteen](../../Assets/EmptyCanteen.png)
 
 > **Note**
 >
@@ -80,7 +80,7 @@ return {
 
 You may encounter a compiler error as we are not using the `SPHttpClient` import. Simply comments out the import for now
 
-![ComplierError](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/CompilerError.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ComplierError](../../Assets/CompilerError.png)
 
 ```typescript
 //import { SPHttpClient } from '@microsoft/sp-http'

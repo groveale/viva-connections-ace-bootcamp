@@ -7,7 +7,7 @@ We will be following on from the cafeteria ACE solution we prepared in the pervi
 
 We need to create a list that will work with the interface we have defined. To do this, we have prepared a `PowerShell` script that uses `PnP.PowerShell` to streamline the process.
 
-1. Download the script from [here](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Labs/Session%205/CreateList.ps1). You will also need to download a copy of [`meals.json`](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Labs/Session%205/session5Meals.json)
+1. Download the script from [here](./CreateList.ps1). You will also need to download a copy of [`meals.json`](./session5Meals.json)
 
 2. Open the downloaded script and update the following variables in the script to reflect your environment. 
 Make sure the `siteUrl` is your SPO home site or root site (`https://<yourtenant>.sharepoint.com` **or** `https://<yourtenant>.sharepoint.com/sites/home`).
@@ -26,7 +26,7 @@ You may have issues if using PnP PowerShell 2.1.0
 
 4. Check your SPO Site, you should see a list similar to the below:
 
-![Populated SPO List](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/SPOList.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Populated SPO List](../../Assets/SPOList.png)
 
 ## Task 2 - Write the fetch data method
 
@@ -97,7 +97,7 @@ The final step is to call the `_fetchData()` function from the `onInit()` functi
 
 1. Save your changes and check your workbench. We should now see the ACE and the QuickView should be populated with data. As below:
 
-![SPO Canteen](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/SPOCanteen.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![SPO Canteen](../../Assets/SPOCanteen.png)
 
 ## Troubleshooting
 

@@ -44,7 +44,7 @@ public onInit(): Promise<void> {
 
 4. Save you changes and check your workbench. Your card should look no different. To see the console.log we will need to open developer tools in your browser `(Shift+Ctrl+I or F12)`. You should see the below in the console.
 
-![ACE with dev tools](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/DevToolsProp.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![ACE with dev tools](../../Assets/DevToolsProp.png)
 
 ## Task 2. Use Properties in the CardView
 
@@ -114,4 +114,4 @@ public get data(): IImageCardParameters {
 
 7. Save your changes and check your workbench. Your CardView should look like the below screenshot. Pretty fancy!
 
-![CardView with Image](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/CardViewProps.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![CardView with Image](../../Assets/CardViewProps.png)

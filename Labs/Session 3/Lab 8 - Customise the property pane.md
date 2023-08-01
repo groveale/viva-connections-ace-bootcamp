@@ -31,7 +31,7 @@ groupFields: [
 >
 > The values are pre populated with the default values specified in the manifest file.
 
-![Property Pane Open](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/PropertyPane.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Property Pane Open](../../Assets/PropertyPane.png)
 
 4. Update the Image URL property, notice how this is immediately reflected in your CardView. Pretty awesome.
 
@@ -92,7 +92,7 @@ groupFields: [
 
 2. Save you changes and check your workbench. Clicking edit on your ACE should open the Property Pane. There will be no noticeable change but know that under the covers SPFx will be using the localisation file that represents your local. (If it was configured)
 
-![Property Pane with Localisations](https://dev.azure.com/CEandS/836eb273-0e36-48af-a1c0-a78790ff1bec/_apis/git/repositories/f8282c8f-7b8c-4f7f-962e-fa6118fb3ef7/items?path=/Assets/PropertyPaneLocal.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![Property Pane with Localisations](../../Assets/PropertyPaneLocal.png)
 
 > **Note**
 >
