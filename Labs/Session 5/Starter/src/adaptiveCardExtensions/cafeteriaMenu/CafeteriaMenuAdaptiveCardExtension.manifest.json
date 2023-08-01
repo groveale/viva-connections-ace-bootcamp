@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/adaptive-card-extension-manifest.schema.json",
+  "id": "efbe58ca-4f52-445e-9c3b-411705d983fc",
+  "alias": "CafeteriaMenuAdaptiveCardExtension",
+  "componentType": "AdaptiveCardExtension",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["Dashboard"],
+  "preconfiguredEntries": [{
+    "groupId": "bd067b1e-3ad5-4d5d-a5fe-505f07d7f59c",
+    "group": { "default": "Dashboard" },
+    "title": { "default": "Cafeteria" },
+    "description": { "default": "Explore what delicious food served is served in the cafeteria" },
+    "officeFabricIconFontName": "EatDrink",
+    "properties": {
+      "title": "Cafeteria",
+      "listTitle": "MealsBootCamp5c",
+      "imageUrl": "https://media.akamai.odsp.cdn.office.net/uksouth1-mediap.svc.ms/transform/thumbnail?provider=url&inputFormat=jpg&docid=https%3A%2F%2Fcdn.hubblecontent.osi.office.net%2Fm365content%2Fpublish%2Fb0e728ff-166f-4ab8-8a94-c89a1f27670b%2F1063044852.jpg&w=400"
+    },
+    "cardSize": "Large"
+  }]
+}

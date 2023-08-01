@@ -1,0 +1,208 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.5",
+  "type": "AdaptiveCard",
+  "body": [
+      {
+          "type": "Container",
+          "bleed": true,
+          "backgroundImage": {
+              "url": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/cafe.jpg"
+          },
+          "items": [
+              {
+                  "type": "Container",
+                  "minHeight": "120px",
+                  "items": []
+              },
+              {
+                  "type": "ColumnSet",
+                  "columns": [
+                      {
+                          "type": "Column",
+                          "width": "auto",
+                          "style": "default",
+                          "items": [
+                              {
+                                  "type": "ColumnSet",
+                                  "columns": [
+                                      {
+                                          "type": "Column",
+                                          "width": "auto",
+                                          "items": [
+                                              {
+                                                  "type": "TextBlock",
+                                                  "text": "${restaurant_state}",
+                                                  "wrap": true,
+                                                  "color": "Default",
+                                                  "weight": "Bolder",
+                                                  "size": "Small"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "type": "Column",
+                                          "width": "auto",
+                                          "items": [
+                                              {
+                                                  "type": "TextBlock",
+                                                  "text": "•",
+                                                  "wrap": true,
+                                                  "horizontalAlignment": "Center",
+                                                  "isSubtle": true
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "type": "Column",
+                                          "width": "stretch",
+                                          "items": [
+                                              {
+                                                  "type": "TextBlock",
+                                                  "text": "Closes in ${time_to_close}",
+                                                  "wrap": true,
+                                                  "color": "Attention",
+                                                  "weight": "Default",
+                                                  "size": "Small",
+                                                  "spacing": "Small"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              },
+                              {
+                                  "type": "TextBlock",
+                                  "text": "${restaurant_name}",
+                                  "wrap": true,
+                                  "size": "Large",
+                                  "weight": "Bolder",
+                                  "spacing": "Medium"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "Column",
+                          "width": "stretch"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "$data": "${menus}",
+          "type": "Container",
+          "items": [
+              {
+                  "type": "ColumnSet",
+                  "columns": [
+                      {
+                          "type": "Column",
+                          "width": "stretch",
+                          "items": [
+                              {
+                                  "type": "TextBlock",
+                                  "text": "${day}",
+                                  "wrap": true,
+                                  "horizontalAlignment": "Center",
+                                  "size": "Medium"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "Column",
+                          "width": "auto",
+                          "items": [
+                              {
+                                  "type": "TextBlock",
+                                  "text": "&gt;",
+                                  "wrap": true,
+                                  "size": "Medium",
+                                  "id": "textSymbolExpanded${day}",
+                                  "isVisible": false
+                              },
+                              {
+                                  "type": "TextBlock",
+                                  "text": "v",
+                                  "wrap": true,
+                                  "size": "Medium",
+                                  "id": "textSymbolCollapsed${day}"
+                              }
+                          ]
+                      }
+                  ],
+                  "style": "emphasis",
+                  "selectAction": {
+                      "type": "Action.ToggleVisibility",
+                      "targetElements": [
+                          "columnSet${day}",
+                          "textSymbolExpanded${day}",
+                          "textSymbolCollapsed${day}"
+                      ]
+                  }
+              },
+              {
+                  "type": "ColumnSet",
+                  "columns": [
+                      {
+                          "type": "Column",
+                          "width": "80px",
+                          "minHeight": "80px",
+                          "items": [
+                              {
+                                  "type": "Container",
+                                  "backgroundImage": {
+                                      "url": "${imageUrl}",
+                                      "horizontalAlignment": "Center",
+                                      "verticalAlignment": "Center"
+                                  },
+                                  "minHeight": "80px",
+                                  "verticalContentAlignment": "Center",
+                                  "items": []
+                              }
+                          ],
+                          "verticalContentAlignment": "Center"
+                      },
+                      {
+                          "type": "Column",
+                          "width": "auto",
+                          "items": [
+                              {
+                                  "type": "TextBlock",
+                                  "text": "${title}",
+                                  "wrap": true,
+                                  "weight": "Bolder",
+                                  "size": "Medium"
+                              },
+                              {
+                                  "type": "TextBlock",
+                                  "text": "${description}",
+                                  "isSubtle": true,
+                                  "wrap": true,
+                                  "spacing": "Small",
+                                  "maxLines": 2
+                              }
+                          ],
+                          "verticalContentAlignment": "Center"
+                      },
+                      {
+                          "type": "Column",
+                          "width": "20px",
+                          "items": [
+                              {
+                                  "type": "Image",
+                                  "url": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/arrow-right.png",
+                                  "horizontalAlignment": "Right",
+                                  "width": "20px",
+                                  "height": "20px"
+                              }
+                          ],
+                          "verticalContentAlignment": "Center"
+                      }
+                  ],
+                  "id": "columnSet${day}",
+                  "isVisible": false
+              }
+          ]
+      }
+  ]
+}

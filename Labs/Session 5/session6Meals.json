@@ -1,0 +1,56 @@
+{
+    "menus": [
+        {
+            "day": "Today",
+            "title": "Korean Cuisine",
+            "description": "Description for the Korean cuisine",
+            "imageUrl": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/korean.jpg",
+            "menuItems": [
+                {
+                    "item_name": "Bibimbap",
+                    "price": 12.99,
+                    "description": "A delicious Korean mixed rice dish with vegetables and meat.",
+                    "calories": 800
+                },
+                {
+                    "item_name": "Kimchi Jjigae",
+                    "price": 10.49,
+                    "description": "Spicy Korean stew made with kimchi and pork.",
+                    "calories": 600
+                },
+                {
+                    "item_name": "Bulgogi",
+                    "price": 14.75,
+                    "description": "Marinated and grilled Korean beef served with rice.",
+                    "calories": 900
+                }
+            ]
+        },
+        {
+            "day": "Tomorrow",
+            "title": "Italian Cuisine",
+            "description": "Description for the Italian cuisine",
+            "imageUrl": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/pizza.jpg",
+            "menuItems": [
+                {
+                    "item_name": "Margherita Pizza",
+                    "price": 15.99,
+                    "description": "Classic Italian pizza with tomato sauce, mozzarella, and basil.",
+                    "calories": 950
+                },
+                {
+                    "item_name": "Pasta Carbonara",
+                    "price": 12.49,
+                    "description": "Creamy Italian pasta with eggs, cheese, and pancetta.",
+                    "calories": 800
+                },
+                {
+                    "item_name": "Tiramisu",
+                    "price": 8.25,
+                    "description": "Traditional Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+                    "calories": 500
+                }
+            ]
+        }
+    ]
+}

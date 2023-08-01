@@ -1,0 +1,16 @@
+{
+    "menus": [
+        {
+            "day" : "Today",
+            "title" : "Korean Cuisine",
+            "description" : "Description for the Korean cuisine",
+            "imageUrl" : "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/korean.jpg"
+        },
+        {
+            "day" : "Tomorrow",
+            "title" : "Italian Cuisine",
+            "description" : "Description for the Italian cuisine",
+            "imageUrl" : "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/visual-list/assets/pizza.jpg"
+        }
+    ]
+}
