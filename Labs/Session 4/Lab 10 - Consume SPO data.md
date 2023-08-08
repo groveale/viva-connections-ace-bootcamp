@@ -20,9 +20,15 @@ $mealsJsonPath = ".\meals.json"
 ```
 3. Run the script
 
-You may have issues if using PnP PowerShell 2.1.0
-
 `.\CreateList.ps1`
+
+If you don't have PnP.PowerShell installed, you can do so with the following command:
+
+`Install-Module -Name PnP.PowerShell -RequiredVersion 1.12.0`
+
+If this is the first time using PnP PowerShell you will need to consent to an auth prompt similar to the below:
+
+![PnP Auth Prompt](../../Assets/PnPAuthPrompt.png)
 
 4. Check your SPO Site, you should see a list similar to the below:
 
