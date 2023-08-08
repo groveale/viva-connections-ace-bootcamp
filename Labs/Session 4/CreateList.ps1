@@ -20,6 +20,18 @@ $listName = "CafeteriaMenu"
 $mealsJsonPath = ".\session5Meals.json"
 
 ##############################################
+# Dependencies
+##############################################
+## Requires the following modules:
+try {
+    Import-Module PnP.PowerShell
+}
+catch {
+    Write-Error "Error importing modules required modules - $($Error[0].Exception.Message))"
+    Exit
+}
+
+##############################################
 # Functions
 ##############################################
 
