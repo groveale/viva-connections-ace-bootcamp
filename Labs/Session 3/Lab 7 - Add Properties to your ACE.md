@@ -101,7 +101,7 @@ export class CardView extends BaseImageCardView<ICafeteriaMenuAdaptiveCardExtens
 ```typescript
 public get data(): IImageCardParameters {
   return {
-    primaryText: strings.PrimaryText,
+    primaryText: "Bootcamp Cafe",
     imageUrl: this.properties.imageUrl,
     title: this.properties.title
   };
