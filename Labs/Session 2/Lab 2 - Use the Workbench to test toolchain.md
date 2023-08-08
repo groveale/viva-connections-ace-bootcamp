@@ -17,7 +17,7 @@ In this exercise you will test that all the tools are installed and that they ar
 
 5.	Wait for the project creation to complete. It may take a few minutes.
 
-##Task 2 - Test the newly created Adaptive Card Extension
+## Task 2 - Test the newly created Adaptive Card Extension
 1. Change the working directory to your project folder
 2. Run the following command to trust the cert used by the local dev server 
         

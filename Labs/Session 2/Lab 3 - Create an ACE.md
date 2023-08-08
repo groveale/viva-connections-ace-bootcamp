@@ -3,6 +3,9 @@ In this exercise we create the Cafeteria ACE that will be used in subsequent exe
 
 ## Task 0 - Install Viva Connections Toolkit (if not installed already)
 
+we may need to install vscode - https://code.visualstudio.com/download
+
+
 1. Navigate to the Viva Connections Toolkit [download link](https://marketplace.visualstudio.com/items?itemName=m365pnp.viva-connections-toolkit)
 2. Click the **Install** button, this will open the extension in your VSCode app
 3. Click **Install** again, wait for the extension to complete installion.

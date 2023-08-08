@@ -14,6 +14,10 @@ If it's lower than 1.13, uninstall it by running:
 
     npm uninstall --global @microsoft/generator-sharepoint
 
+> **Note**
+>
+> Don't worry if you are seeing errors, this means that you don't have node installed. Please proceed!
+
 ## Task 2: Install Node and required packages for SharePoint Framework
 If you don't have the SharePoint Framework Yeoman generator installed, or if you uninstalled it, follow these steps to install it on your computer:
 
