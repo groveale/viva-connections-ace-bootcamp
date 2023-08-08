@@ -44,7 +44,7 @@ Now that the data has been populated in an SPO list, it's time to create a metho
 import { SPHttpClient } from '@microsoft/sp-http'
 ```
 
-2. Add the following `_fetchData()` function. This function will make a rest call to get all items from the list defined in the ACE properties. It will then set the `menuItems` state property. As this is a big chunk of code I have added inline comments to explain what is going on.
+2. Add the following `_fetchData()` function to the bottom of the ACE base class inside the `CafeteriaMenuAdaptiveCardExtension` class definition. This function will make a rest call to get all items from the list defined in the ACE properties. It will then set the `menuItems` state property. As this is a big chunk of code I have added inline comments to explain what is going on.
 
 ```typescript
 private _fetchData(): Promise<void> {

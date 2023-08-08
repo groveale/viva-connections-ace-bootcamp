@@ -132,7 +132,13 @@ public getMenuItems(siteUrl: string, listTitle: string): Promise<ICafeteriaMenuI
 
 ## Task 3 - Implementing the interface.
 
-1. We need to Initialize the `CafeteriaMenuService` Service. The best place for this is in the `OnInit()` method of the ACE. We store a reference to the service in the `_client` property.
+1. We will need to add the relevant import to the `CafeteriaMenuAdaptiveCardExtension.ts` file
+
+```typescript
+import { ICafeteriaMenuService } from "./ICafeteriaMenuService";
+```
+
+2. We need to Initialize the `CafeteriaMenuService` Service. The best place for this is in the `OnInit()` method of the ACE. We store a reference to the service in the `_client` property.
 
 ```typescript
 private _deferredPropertyPane: CafeteriaMenuPropertyPane;
@@ -150,11 +156,7 @@ public onInit(): Promise<void> {
 }
 ```
 
-2. We will need to add the relevant import to the `CafeteriaMenuAdaptiveCardExtension.ts` file
 
-```typescript
-import { ICafeteriaMenuService } from "./ICafeteriaMenuService";
-```
 
 3. Update the `_fetchData()` method as follows:
 
