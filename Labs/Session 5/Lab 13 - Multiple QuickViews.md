@@ -43,7 +43,7 @@ You may have noticed we have added a reference to a state property called `selec
 
 ```typescript
 export interface ICafeteriaMenuAdaptiveCardExtensionState {
-  menus: ICafeteriaMenu[];
+  menuItems: ICafeteriaMenu[];
   selectedMenu: ICafeteriaMenu;
 }
 ```
@@ -53,7 +53,7 @@ We also need to intilise this new state property as follows:
 ```typescript
   public onInit(): Promise<void> {
     this.state = {
-      menus: [],
+      menuItems: [],
       selectedMenu: {} as ICafeteriaMenu
     };
     ...
@@ -136,7 +136,7 @@ public async onAction(action: IActionArguments): Promise<void> {
         const submitAction = <ISubmitActionArguments>action;
         const { id, selectedDay } = submitAction.data;
         if (id === 'menuSelected') {
-          const selectedMenu = this.state.menus.filter((item) => item.day === selectedDay)[0];
+          const selectedMenu = this.state.menuItems.filter((item) => item.day === selectedDay)[0];
           this.setState({ selectedMenu: selectedMenu });
           this.quickViewNavigator.push(DETAILED_VIEW_REGISTRY_ID);
         }

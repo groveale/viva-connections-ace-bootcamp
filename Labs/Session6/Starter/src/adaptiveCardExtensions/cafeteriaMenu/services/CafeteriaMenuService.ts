@@ -27,8 +27,8 @@ export class CafeteriaMenuService implements ICafeteriaMenuService {
             SPHttpClient.configurations.v1,
             { headers: { 'accept': 'application/json;odata.metadata=none' }}
         )
-        .then((response) => response.json())
-        .then((jsonResponse) => jsonResponse.value.map(
+        .then((response: any) => response.json())
+        .then((jsonResponse: any) => jsonResponse.value.map(
         (item: any) => 
         { 
             return { 

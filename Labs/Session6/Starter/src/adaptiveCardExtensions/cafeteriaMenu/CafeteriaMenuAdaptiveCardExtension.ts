@@ -76,23 +76,24 @@ export default class CafeteriaMenuAdaptiveCardExtension extends BaseAdaptiveCard
     return this._deferredPropertyPane?.getPropertyPaneConfiguration();
   }
 
-  private async _fetchData(): Promise<void> {
-
+  private _fetchData(): Promise<void> {
     try {
-      await this._client.getMenuItems(this.context.pageContext.site.absoluteUrl, this.properties.listTitle)
-      .then((items) => this.setState(
-      { 
-        menuItems: items 
-      }));
+      return this._client.getMenuItems(this.context.pageContext.site.absoluteUrl, this.properties.listTitle)
+        .then((items) => this.setState(
+          {
+            menuItems: items
+          }));
     }
-    catch {(error: any) => {
-      this.setState({
-        error: true,
-        errorMessage: error.message
-      });
+    catch {
+      (error: any) => {
+        this.setState({
+          error: true,
+          errorMessage: error.message
+        });
+      }
+    }
+    finally {
+      return Promise.resolve();
     }
   }
-    return Promise.resolve();
-  }
-  
 }

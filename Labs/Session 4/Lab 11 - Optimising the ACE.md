@@ -162,7 +162,7 @@ public onInit(): Promise<void> {
 
 ```typescript
 private _fetchData(): Promise<void> {
-    return _client.getMenuItems(this.context.pageContext.site.absoluteUrl, this.properties.listTitle)
+    return this._client.getMenuItems(this.context.pageContext.site.absoluteUrl, this.properties.listTitle)
     // Step 5: After mapping the JSON response to menu items, update the component's state with the retrieved menu items.
     .then((items) => this.setState(
     { 
