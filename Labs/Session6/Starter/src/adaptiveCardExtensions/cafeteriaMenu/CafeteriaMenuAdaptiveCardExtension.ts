@@ -77,23 +77,17 @@ export default class CafeteriaMenuAdaptiveCardExtension extends BaseAdaptiveCard
   }
 
   private _fetchData(): Promise<void> {
-    try {
-      return this._client.getMenuItems(this.context.pageContext.site.absoluteUrl, this.properties.listTitle)
-        .then((items) => this.setState(
-          {
-            menuItems: items
-          }));
-    }
-    catch {
-      (error: any) => {
+    return this._client.getMenuItems(this.context.pageContext.site.absoluteUrl, this.properties.listTitle)
+      .then((items) => this.setState(
+        {
+          menuItems: items
+        }))
+      .catch((error) => {
         this.setState({
           error: true,
-          errorMessage: error.message
+          errorMessage: `Error fetching menu items from list: ${this.properties.listTitle}`
         });
       }
-    }
-    finally {
-      return Promise.resolve();
-    }
+      )
   }
 }
