@@ -7,6 +7,7 @@ import { CafeteriaMenuService } from './services/CafeteriaMenuService';
 import { ICafeteriaMenuService } from './services/ICafeteriaMenuService';
 import { ICafeteriaMenu } from './models/ICafeteriaMenu';
 import { DetailedView } from './quickView/DetailedView';
+import { ErrorView } from './cardView/ErrorView';
 
 export interface ICafeteriaMenuAdaptiveCardExtensionProps {
   title: string;
@@ -17,9 +18,12 @@ export interface ICafeteriaMenuAdaptiveCardExtensionProps {
 export interface ICafeteriaMenuAdaptiveCardExtensionState {
   menuItems: ICafeteriaMenu[];
   selectedMenuItem: ICafeteriaMenu;
+  error: boolean
+  errorMessage: string
 }
 
 const CARD_VIEW_REGISTRY_ID: string = 'CafeteriaMenu_CARD_VIEW';
+const ERROR_VIEW_REGISTRY_ID: string = 'CafeteriaMenu_ERROR_VIEW';
 export const QUICK_VIEW_REGISTRY_ID: string = 'CafeteriaMenu_QUICK_VIEW';
 export const DETAILED_VIEW_REGISTRY_ID: string = 'CafeteriaMenu_DETAILED_VIEW';
 
@@ -33,12 +37,15 @@ export default class CafeteriaMenuAdaptiveCardExtension extends BaseAdaptiveCard
   public onInit(): Promise<void> {
     this.state = {
       menuItems: [],
-      selectedMenuItem: {} as ICafeteriaMenu
+      selectedMenuItem: {} as ICafeteriaMenu,
+      error: false,
+      errorMessage: ''
     };
 
     this._client = this.context.serviceScope.consume(CafeteriaMenuService.serviceKey);
 
     console.log(`this.properties.listTitle: ${this.properties.listTitle}`);
+    this.cardNavigator.register(ERROR_VIEW_REGISTRY_ID, () => new ErrorView());
     this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, () => new CardView());
     this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, () => new QuickView());
     this.quickViewNavigator.register(DETAILED_VIEW_REGISTRY_ID, () => new DetailedView());
@@ -59,6 +66,9 @@ export default class CafeteriaMenuAdaptiveCardExtension extends BaseAdaptiveCard
   }
 
   protected renderCard(): string | undefined {
+    if (this.state.error) {
+      return ERROR_VIEW_REGISTRY_ID;
+    }
     return CARD_VIEW_REGISTRY_ID;
   }
 
@@ -66,12 +76,23 @@ export default class CafeteriaMenuAdaptiveCardExtension extends BaseAdaptiveCard
     return this._deferredPropertyPane?.getPropertyPaneConfiguration();
   }
 
-  private _fetchData(): Promise<void> {
-    return this._client.getMenuItems(this.context.pageContext.site.absoluteUrl, this.properties.listTitle)
+  private async _fetchData(): Promise<void> {
+
+    try {
+      await this._client.getMenuItems(this.context.pageContext.site.absoluteUrl, this.properties.listTitle)
       .then((items) => this.setState(
       { 
         menuItems: items 
       }));
+    }
+    catch {(error: any) => {
+      this.setState({
+        error: true,
+        errorMessage: error.message
+      });
+    }
+  }
+    return Promise.resolve();
   }
   
 }
