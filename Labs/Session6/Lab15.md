@@ -58,7 +58,7 @@ export interface IRestaurantState {
 
 6. We are working with an anonymous API sot he HTTP client is suitable, if this was an enterprise API then we would need to use the `AadHttpClient` that we covered in the slides. Update the `getHoursUntilClose()` method as below.
 
-This URL is to an API hosted by me
+This URL is to an API hosted by me - Source code for the API can be found [here](./BootcampAPIFunction)
 
 ```typescript
 public getHoursUntilClose(): Promise<IRestaurantState> {
