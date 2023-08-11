@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.20.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.17.4",
+    "libraryName": "cafeteria-menu",
+    "libraryId": "709054a9-6451-42ee-aac0-ebc7cd42edd8",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "CafeteriaMenu",
+    "solutionShortDescription": "CafeteriaMenu description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "adaptiveCardExtension",
+    "aceTemplateType": "Basic"
+  }
+}

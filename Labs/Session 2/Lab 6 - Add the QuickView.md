@@ -11,7 +11,7 @@ This Adaptive Card was built in Session 2 of the Bootcamp. The .json file for th
 
     ..\cafeteria-ace\src\adaptiveCardExtensions\helloCafeteria\quickView\template\QuickViewTemplate.json
 
-2. Paste the content of the CafeteriaQuickView.json into this file.
+2. Replace the content of QuickViewTemplate.json with the CafeteriaQuickView.json definition.
 
 3. Save your changes and check your workbench. Your QuickView should look like the following:
 

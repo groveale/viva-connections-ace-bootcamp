@@ -1,0 +1,96 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "${menu.day}'s Menu",
+            "size": "Large",
+            "weight": "Bolder",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "${menu.title}",
+            "size": "Medium",
+            "weight": "Bolder",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "Image",
+            "url": "${menu.imageUrl}"
+        },
+        {
+            "type": "TextBlock",
+            "text": "${menu.description}",
+            "wrap": true,
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Menu Items",
+                    "size": "Medium",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "Container",
+                    "$data": "${menu.menuItems}",
+                    "items": [
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": 3,
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "${itemName}",
+                                            "weight": "Bolder"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "${itemDescription}",
+                                            "wrap": true
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Calories: ${itemCalories}",
+                                            "wrap": true,
+                                            "horizontalAlignment": "Left"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": 1,
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Price: £${itemPrice}",
+                                            "wrap": true,
+                                            "horizontalAlignment": "Right"
+                                        }
+                                    ],
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        }
+                    ],
+                    "separator": true
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Order Now",
+            "url": "https://example.com/order"
+        }
+    ]
+}
